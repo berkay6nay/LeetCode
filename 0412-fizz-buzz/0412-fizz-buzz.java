@@ -2,9 +2,9 @@ class Solution {
     public List<String> fizzBuzz(int n) {
         
     List<String> empty_list = new ArrayList<>();
-    
+    String flag = "";
     for(int i = 1 ; i <= n ; ++i){
-        String flag = "";
+        flag = "";
         if(i % 3 == 0) flag += "Fizz";
         if(i % 5 == 0) flag += "Buzz";
         if(i % 5 != 0 && i % 3 != 0) flag += String.valueOf(i);
